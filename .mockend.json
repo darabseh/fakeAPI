@@ -4,6 +4,7 @@
     "views": "int",
     "published": "boolean",
     "createdAt": "date",
+    "slug": "string"
     "comments": "Comment[]",
     "createdBy": "User"
   },
