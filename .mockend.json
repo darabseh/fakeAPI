@@ -1,0 +1,22 @@
+{
+  "Post": {
+    "title": "string",
+    "description" :"string",
+    "views": "int",
+    "published": "boolean",
+    "createdAt": "date",
+    "slug": "string",
+    "comments": "Comment[]",
+    "createdBy": "User"
+  },
+  "Comment": {
+    "body": "string",
+    "post": "Post"
+  },
+  "User":{
+  "name":"string",
+    "username":"string",
+    "email":"string"
+  }
+  
+}
