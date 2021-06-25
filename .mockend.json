@@ -1,1 +1,21 @@
 # fakeAPI
+{
+  "Post": {
+    "title": "string",
+    "views": "int",
+    "published": "boolean",
+    "createdAt": "date",
+    "comments": "Comment[]"
+    "createdBy": "User"
+  },
+  "Comment": {
+    "body": "string",
+    "post": "Post"
+  },
+  "User":{
+  "name":"string",
+    "username":"string",
+    "email":"string"
+  }
+  
+}
