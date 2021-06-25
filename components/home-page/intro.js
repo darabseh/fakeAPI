@@ -5,7 +5,7 @@ function Intro() {
     return (
         <Fragment>
             <h1 className={styles.title}>
-                Welcome to Darabseh's blog
+                Welcome to Darabseh blog
         </h1>
 
             <p className={styles.description}>
