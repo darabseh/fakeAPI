@@ -7,7 +7,7 @@ function PostItem(props) {
         <Link href={`/posts/${post.id}`}>
             <a className={styles.card}>
                 <h2>{post.title}&rarr;</h2>
-                <p>{post.description}</p>
+                <p>{post.body}</p>
             </a>
         </Link>
     );

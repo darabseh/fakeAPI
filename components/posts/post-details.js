@@ -8,7 +8,7 @@ function PostDetails(props) {
         <div className={styles.card}>
             <h1>{post.title}&rarr;</h1>
             <hr />
-            <p>{post.description}</p>
+            <p>{post.body}</p>
         </div>
     );
 }

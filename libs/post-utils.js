@@ -1,5 +1,5 @@
 export async function GetAllPosts() {
-    const response = await fetch("https://mockend.com/darabseh/nextjs-blog/posts");
+    const response = await fetch("https://jsonplaceholder.typicode.com/posts");
     const data = await response.json();
     return data;
 }
@@ -11,7 +11,7 @@ export async function GetAllPostPaths() {
 }
 
 export async function GetPostData(id) {
-    const response = await fetch(`https://mockend.com/darabseh/nextjs-blog/post/${id}`);
+    const response = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
     const data = await response.json();
     return data;
 }
