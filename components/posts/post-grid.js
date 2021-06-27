@@ -8,10 +8,10 @@ function PostGrid(props) {
 
     return (
         <div className={styles.grid}>
-   
-           {posts.map((post)=>{
-              return <Post key={post.slug} post={post} />
-           })} 
+
+            {posts.map((post) => {
+                return <Post key={post.id} post={post} />
+            })}
         </div>
     );
 }
