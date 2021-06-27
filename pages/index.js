@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.css'
 import PostGrid from '../components/posts/post-grid'
 import Intro from '../components/home-page/intro'
 import Footer from '../components/layout/footer'
-import {GetAllPosts} from '../libs/post-utils'
+import { GetAllPosts } from '../libs/post-utils'
 
 export default function Home(props) {
   return (
@@ -17,21 +17,21 @@ export default function Home(props) {
 
       <main className={styles.main}>
         <Intro />
-          <PostGrid posts={props.posts}/>
+        <PostGrid posts={props.posts} />
 
       </main>
 
-    <Footer/>
+      <Footer />
     </div>
   )
 }
 
-export async function getStaticProps(){
-const allPosts = await GetAllPosts();
-return {
-  props: {
-    posts: allPosts,
-  },
-};
+export async function getStaticProps() {
+  const allPosts = await GetAllPosts();
+  return {
+    props: {
+      posts: allPosts,
+    },
+  };
 
 }
