@@ -1,11 +1,17 @@
 import PostGrid from "../../components/posts/post-grid";
 import { GetAllPosts } from '../../libs/post-utils'
+import Head from 'next/head'
 
 function Posts(props) {
     const { posts } = props;
 
     return (
-        <PostGrid posts={posts}></PostGrid>
+        <>
+            <Head>
+                <title>All posts</title>
+            </Head>
+            <PostGrid posts={posts}></PostGrid>
+        </>
     )
 }
 
